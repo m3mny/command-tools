@@ -8,7 +8,7 @@ def check_sites():
                 pass
         else:
                 print('Writing defaults...')
-                default_dic = {"fb":"www.facebook.com/m3mny",
+                default_dic = {"fb":"www.facebook.com",
                        "yt":"www.youtube.com",
                        "inbox":"inbox.google.com",
                        "search":"www.duckduckgo.com/?q="}
@@ -62,7 +62,7 @@ Use 'ff search' to search any following terms in your favourite engine.
                                 if j == i:
                                         urls.append(i)
                 if len(urls) == 0:
-                        print ("I don't recognise this (these). Add and try again")
+                        print ("I don't recognise this, try 'ff help'")
                         exit()
                 elif len(urls) < len(sys.argv) - 1:
                         for m in sys.argv[1:]:
